@@ -14,9 +14,7 @@ function App() {
       <Header />
       <Main>
         <Routes>
-          <Route path="/" element={
-            <HomePage />
-          } />
+          <Route path="/" element={<HomePage />} />
           <Route path="/country/:name" element={<Details />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
