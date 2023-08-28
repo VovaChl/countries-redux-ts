@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import { Header } from './components/Header';
 import { Main } from './components/Main';
@@ -10,16 +10,18 @@ import { NotFound } from './pages/NotFound';
 function App() {
   return (
     <>
+    <Router basename='/countries'>
       <Header />
       <Main>
         <Routes>
-          <Route path="/countries-redux-ts" element={
+          <Route path="/" element={
             <HomePage />
           } />
           <Route path="/country/:name" element={<Details />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Main>
+      </Router>
     </>
   );
 }
