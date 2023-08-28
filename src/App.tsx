@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Main>
         <Routes>
-          <Route path="/" element={
+          <Route path="/countries-redux-ts/" element={
             <HomePage />
           } />
           <Route path="/country/:name" element={<Details />} />
