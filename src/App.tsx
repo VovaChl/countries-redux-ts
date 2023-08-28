@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Router basename='/countries-redux-ts'>
-    <Header />
+      <Header />
       <Main>
         <Routes>
           <Route path="/" element={
