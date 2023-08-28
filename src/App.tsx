@@ -11,17 +11,17 @@ function App() {
   return (
     <>
     <Router basename='/countries-redux-ts'>
-      <Header />
+    <Header />
       <Main>
         <Routes>
           <Route path="/" element={
             <HomePage />
           } />
           <Route path="/country/:name" element={<Details />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </Main>
-      </Router>
+    </Router>
     </>
   );
 }
