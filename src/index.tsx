@@ -15,7 +15,7 @@ const root = ReactDOMClient.createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/countries-redux-ts">
         <App />
       </BrowserRouter>
     </Provider>

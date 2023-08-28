@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import { Header } from './components/Header';
 import { Main } from './components/Main';
@@ -10,7 +10,6 @@ import { NotFound } from './pages/NotFound';
 function App() {
   return (
     <>
-    <Router basename="/countries-redux-ts">
       <Header />
       <Main>
         <Routes>
@@ -19,7 +18,6 @@ function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Main>
-    </Router>
     </>
   );
 }
