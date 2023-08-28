@@ -10,7 +10,7 @@ import { NotFound } from './pages/NotFound';
 function App() {
   return (
     <>
-    <Router basename='/countries-redux-ts'>
+    <Router basename="/countries-redux-ts">
       <Header />
       <Main>
         <Routes>
